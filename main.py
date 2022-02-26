@@ -8,7 +8,7 @@ pygame.init()
 screen = pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT))
 pygame.display.set_caption('Platformer')
 clock = pygame.time.Clock()
- 
+bg = pygame.image.load("img/bg.jpg")
 level = Level()
 
 while True:
@@ -18,7 +18,8 @@ while True:
             pygame.quit()
             sys.exit()
     
-    screen.fill(BG_COLOR)
+    # screen.fill(BG_COLOR)
+    screen.blit(bg,(0,0))
     level.run()
 
     # draw logic

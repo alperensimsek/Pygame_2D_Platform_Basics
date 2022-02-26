@@ -5,8 +5,10 @@ class Player(pygame.sprite.Sprite):
 
     def __init__(self,pos,groups,collision_sprites):
         super().__init__(groups)
-        self.image = pygame.Surface((TILE_SIZE // 2,TILE_SIZE))
-        self.image.fill(PLAYER_COLOR)
+        self.image = pygame.Surface((TILE_SIZE // 2,TILE_SIZE), pygame.SRCALPHA, 32)
+        self.my_image = pygame.image.load('img/char.png').convert_alpha()
+        # self.image.fill(PLAYER_COLOR)
+        self.image.blit(self.my_image,(0,0))
         self.rect = self.image.get_rect(topleft=pos)
 
         # player movement

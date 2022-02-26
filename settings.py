@@ -3,7 +3,7 @@ LEVEL_MAP = [
 '                            ',
 '                            ',
 '       XXXX           XX    ',
-'   P                        ',
+'              P             ',
 'XXXXX         XX         XX ',
 ' XXXX       XX              ',
 ' XX    X  XXXX    XX  XX    ',
@@ -17,7 +17,7 @@ SCREEN_HEIGHT = 720
 FPS = 60
 
 # colors 
-BG_COLOR = '#060C17'
+BG_COLOR = '#ffffff'
 PLAYER_COLOR = '#C4F7FF'
 TILE_COLOR = '#94D7F2'
 

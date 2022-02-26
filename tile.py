@@ -5,5 +5,7 @@ class Tile(pygame.sprite.Sprite):
     def __init__(self,pos,groups):
         super().__init__(groups)
         self.image = pygame.Surface((TILE_SIZE,TILE_SIZE))
-        self.image.fill(TILE_COLOR)
+        # self.image.fill(TILE_COLOR)
+        self.my_image = pygame.image.load('img/tile.png')
+        self.image.blit(self.my_image,(0,0))
         self.rect = self.image.get_rect(topleft = pos)
